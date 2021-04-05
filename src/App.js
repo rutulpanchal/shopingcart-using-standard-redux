@@ -19,7 +19,7 @@ const { Search } = Input;
 
 
 function App() {
-const items = useSelector(state => state)
+
 
 
 
