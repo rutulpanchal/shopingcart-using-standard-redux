@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from "react-redux";
+import { Provider } from "react-redux"; //import provider from react-redux to pass state to app from store
 import store from './store'
 ReactDOM.render(
   <Provider store={store}>

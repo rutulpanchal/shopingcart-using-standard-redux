@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import { useSelector,useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import ProductCard from './component/ProductCards'
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
@@ -9,9 +9,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Input, Space } from 'antd';
+import { Input } from 'antd';
 import { ShoppingCartOutlined,HomeFilled ,ShoppingOutlined } from '@ant-design/icons';
-import Shop from './component/shopcart';
+import Shop from './component/Shopcart';
 
 
 const { Header, Content, Footer } = Layout;
@@ -20,9 +20,8 @@ const { Search } = Input;
 
 function App() {
 const items = useSelector(state => state)
-const dispatch = useDispatch()
 
-console.log('redux', items)
+
 
   return (
     <div className="App">
